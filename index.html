@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ILLI SWEET BOX | Fait Maison - Beni Mellal </title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+:root{--pink:#d88c9a;--dark:#7a2845;--gold:#c9a86a;--bg:#fff7f8;--green:#25D366}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Poppins',sans-serif;background:var(--bg);color:#333}
+.header{background:white;padding:15px 5%;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:100;box-shadow:0 2px 10px rgba(0,0,0,.05)}
+.logo{font-family:'Playfair Display';font-size:28px;color:var(--dark);letter-spacing:1px}
+.logo span{font-size:11px;display:block;color:var(--gold);letter-spacing:3px}
+.topbar{background:#fce4e8;text-align:center;padding:8px;font-size:13px;color:var(--dark)}
+.hero{background:linear-gradient(135deg,#fff0f3 0%,#ffe4e9 100%);padding:50px 5%;text-align:center}
+.hero h1{font-family:'Playfair Display';font-size:42px;color:var(--dark);margin-bottom:10px}
+.hero p{color:#666;margin-bottom:25px}
+.btn{display:inline-block;background:var(--pink);color:white;padding:12px 28px;border-radius:30px;text-decoration:none;font-weight:600;margin:5px;transition:.3s}
+.btn-green{background:var(--green)}
+.btn:hover{transform:translateY(-2px)}
+.section{padding:40px 5%}
+.section-title{font-family:'Playfair Display';font-size:32px;color:var(--dark);text-align:center;margin-bottom:5px}
+.section-sub{text-align:center;color:var(--gold);margin-bottom:30px;letter-spacing:2px;font-size:13px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px}
+.card{background:white;border-radius:20px;overflow:hidden;box-shadow:0 10px 30px rgba(122,40,69,.08);transition:.3s}
+.card:hover{transform:translateY(-5px)}
+.card img{width:100%;height:200px;object-fit:cover;background:#fff0f3}
+.card-body{padding:18px;text-align:center}
+.card-body h3{font-size:18px;color:var(--dark);margin-bottom:4px}
+.card-body p{font-size:12px;color:#888;margin-bottom:8px;min-height:32px}
+.price{font-size:22px;font-weight:700;color:var(--gold);margin:10px 0}
+.wa-btn{display:block;background:var(--green);color:white;padding:10px;border-radius:25px;text-decoration:none;font-size:14px;font-weight:600}
+.wa-btn:hover{background:#128C7E}
+.badge{display:inline-block;background:var(--dark);color:white;font-size:10px;padding:4px 10px;border-radius:20px;margin-bottom:10px}
+footer{background:var(--dark);color:white;text-align:center;padding:30px 5%;margin-top:40px}
+footer a{color:var(--gold);text-decoration:none}
+@media(max-width:600px){.hero h1{font-size:28px}.grid{grid-template-columns:1fr 1fr;gap:12px}.card img{height:140px}}
+</style>
+</head>
+<body>
+
+<div class="topbar">🚚 Livraison Beni Mellal | 📲 Commandez via WhatsApp 24/7 | 💯 100% Fait Maison</div>
+
+<div class="header">
+  <div class="logo">ILLI SWEET BOX <span>FAIT MAISON • PÂTISSERIES ARTISANALES</span></div>
+  <a class="btn btn-green" href="https://wa.me/212690956892?text=Salam%20Lili%20Sweet%20Box%20bghit%20ncommander">WhatsApp</a>
+</div>
+
+<div class="hero">
+  <span class="badge">GOURMANDISES FAIT MAISON</span>
+  <h1>Douceurs & Salés • Fait Maison</h1>
+  <p>Gourmandises artisanales préparées maison avec amour chaque jour. Ingrédients frais, locaux et 100% fait main.</p>
+  <a href="#sucre" class="btn">Voir le Menu Sucré</a>
+  <a href="#sale" class="btn" style="background:white;color:var(--dark);border:1px solid var(--pink)">Voir le Salé</a>
+</div>
+
+<!-- SUCRE -->
+<div class="section" id="sucre">
+  <div class="section-title">✨ SUCRÉ — Pâtisseries Sucrées</div>
+  <div class="section-sub">NOS DOUCEURS FAIT MAISON</div>
+  <div class="grid">
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?w=500" alt="Brownies">
+      <div class="card-body">
+        <h3>Brownies</h3>
+        <p>Chocolat intense, fondant cœur fondant aux noix</p>
+        <div class="price">25 DH</div>
+        <a class="wa-btn" href="https://wa.me/212690956892?text=Salam%20bghit%20Brownies%2025DH">Commander via WhatsApp</a>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1599785209707-a456fc1337bb?w=500" alt="Cupcakes">
+      <div class="card-body">
+        <h3>Cupcakes</h3>
+        <p>Vanille & crème chantilly, topping sucré coloré</p>
+        <div class="price">20 DH</div>
+        <a class="wa-btn" href="https://wa.me/212690956892?text=Salam%20bghit%20Cupcakes%2020DH">Commander via WhatsApp</a>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1499636136210-6f4ee915583e?w=500" alt="Cookies">
+      <div class="card-body">
+        <h3>Cookies</h3>
+        <p>Cookies pépites de chocolat belge, croustillants</p>
+        <div class="price">15 DH</div>
+        <a class="wa-btn" href="https://wa.me/212690956892?text=Salam%20bghit%20Cookies%2015DH">Commander via WhatsApp</a>
+      </div>
+    </div>
+    <div class="card">
+      <img src="hala.jpg" alt="Hla Oreo">
+      <div class="card-body">
+        <h3>Hla Khachkhach Oreo</h3>
+        <p>Douceur marocaine au Oreo, miel & noix, fait maison</p>
+        <div class="price">30 DH</div>
+        <a class="wa-btn" href="https://wa.me/212690956892?text=Salam%20bghit%20Hla%20Khachkhach%20Oreo%2030DH">Commander via WhatsApp</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SALE -->
+<div class="section" id="sale" style="background:white">
+  <div class="section-title">🧂 SALÉ — Salés Fait Maison</div>
+  <div class="section-sub">BOUCHÉES SALÉES ARTISANALES</div>
+  <div class="grid">
+    <div class="card">
+      <img src="Cigares-aux-fromages.jpg" alt="Cigares">
+      <div class="card-body">
+        <h3>Cigares Fromage & Dinde Fumée</h3>
+        <p>Cigares croustillants au fromage & dinde fumée</p>
+        <div class="price">30 DH / 6 pcs</div>
+        <a class="wa-btn" href="https://wa.me/212690956892?text=Salam%20bghit%20Cigares%20Fromage%20Dinde%2030DH">Commander via WhatsApp</a>
+      </div>
+    </div>
+    <div class="card">
+      <img src="mini-pastilla.jpg" alt="Pastilla">
+      <div class="card-body">
+        <h3>Mini Pastilla Poulet & Amande</h3>
+        <p>Poulet & amandes, pâte filo croustillante, sucré-salé</p>
+        <div class="price">35 DH / 4 pcs</div>
+        <a class="wa-btn" href="https://wa.me/212690956892?text=Salam%20bghit%20Mini%20Pastilla%2035DH">Commander via WhatsApp</a>
+      </div>
+    </div>
+    <div class="card">
+      <img src="mini-pizza.jpg" alt="Mini Pizza">
+      <div class="card-body">
+        <h3>Mini Pizza</h3>
+        <p>Tomate, mozzarella, basilic frais, fait maison</p>
+        <div class="price">22 DH / 4 pcs</div>
+        <a class="wa-btn" href="https://wa.me/212690956892?text=Salam%20bghit%20Mini%20Pizza%2022DH">Commander via WhatsApp</a>
+      </div>
+    </div>
+    <div class="card">
+      <img src="miniquiche.jpg" alt="Mini Quiche">
+      <div class="card-body">
+        <h3>Mini Quiche</h3>
+        <p>Œufs, crème & fromage, lardons, pâte brisée</p>
+        <div class="price">24 DH / 4 pcs</div>
+        <a class="wa-btn" href="https://wa.me/212690956892?text=Salam%20bghit%20Mini%20Quiche%2024DH">Commander via WhatsApp</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <h3>ILLI SWEET BOX • Fait Maison</h3>
+  <p style="margin:15px 0">Livraison: Beni Mellal• Frais 10-20 DH • Commande min 50 DH<br>Horaires: 9h-20h tous les jours</p>
+  <p>WhatsApp: +212 6 90 95 68 92 • Instagram: @lilisweetbox.ma</p>
+  <p style="margin-top:15px;font-size:12px;opacity:.7">© 2026 LILI SWEET BOX — Tous droits réservés • Fabriqué avec amour au Maroc ❤️</p>
+</footer>
+
+</body>
+</html>
