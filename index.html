@@ -35,7 +35,31 @@ body{font-family:'Poppins',sans-serif;background:var(--bg);color:#333}
 .badge{display:inline-block;background:var(--dark);color:white;font-size:10px;padding:4px 10px;border-radius:20px;margin-bottom:10px}
 footer{background:var(--dark);color:white;text-align:center;padding:30px 5%;margin-top:40px}
 footer a{color:var(--gold);text-decoration:none}
-@media(max-width:600px){.hero h1{font-size:28px}.grid{grid-template-columns:1fr 1fr;gap:12px}.card img{height:140px}}
+/* موبايل: وحدة تحت وحدة */
+@media(max-width: 768px){
+  .grid{
+    grid-template-columns: 1fr !important;
+    gap: 16px !important;
+  }
+  .card{
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    padding: 10px;
+  }
+  .card img{
+    width: 110px !important;
+    height: 110px !important;
+    border-radius: 15px;
+    flex-shrink: 0;
+  }
+  .card-body{
+    text-align: left !important;
+    padding: 0 0 0 15px !important;
+  }
+  .card-body h3{font-size:16px}
+  .price{font-size:18px;margin:5px 0}
+}
 </style>
 </head>
 <body>
